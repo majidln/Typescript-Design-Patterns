@@ -1,0 +1,1 @@
+Example by: https://wanago.io/2019/12/02/javascript-design-patterns-factories-typescript/
