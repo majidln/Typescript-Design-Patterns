@@ -1,0 +1,1 @@
+I try to add some typescript examples for design pattern exercises.
