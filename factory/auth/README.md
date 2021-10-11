@@ -1,0 +1,1 @@
+Example by: https://cesarwilliam.medium.com/design-patterns-in-typescript-factory-d870a00b0f31
