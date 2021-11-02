@@ -1,9 +1,9 @@
-interface ICommand {
+export interface ICommand {
     execute: () => void;
     unExecute: () => void;
 }
 
-class LightOnCommand implements ICommand {
+export class LightOnCommand implements ICommand {
     public light: Light;
 
     constructor(light: Light) {
@@ -19,7 +19,7 @@ class LightOnCommand implements ICommand {
     }
 }
 
-class LightOffCommand implements ICommand {
+export class LightOffCommand implements ICommand {
     public light: Light;
 
     constructor(light: Light) {
@@ -35,7 +35,7 @@ class LightOffCommand implements ICommand {
     }
 }
 
-class Light {
+export class Light {
     name: string
 
     constructor(name: string) {
