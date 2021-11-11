@@ -22,7 +22,7 @@ abstract class AbstractClass {
     }
 }
 
-class ConcreteClass extends AbstractClass {
+class ConcreteClass1 extends AbstractClass {
     public primitiveOperation1() {
         console.log('ConcreteClass Operation 1 done')
     }
@@ -31,5 +31,17 @@ class ConcreteClass extends AbstractClass {
     }
 }
 
-const concrete = new ConcreteClass();
+class ConcreteClass2 extends AbstractClass {
+    public primitiveOperation1() {
+        console.log('ConcreteClass 2 Operation 1 done')
+    }
+    public primitiveOperation2() {
+        console.log('ConcreteClass 2 Operation 2 done')
+    }
+}
+
+const concrete = new ConcreteClass1();
 concrete.template()
+
+const concrete2 = new ConcreteClass2();
+concrete2.template()
