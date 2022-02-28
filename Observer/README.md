@@ -1,11 +1,12 @@
-# Observer Pattern
-The **Observer Pattern** defines a one-to-many dependency between objects so that when one object changes state, all of its dependents are notified and updated automatically.
+# Module Pattern
+Split up your code into smaller, reusable pieces.
 
-The **Observer Pattern** defines a one-to-many relationship between a set of objects. When the state of one object changes, all of its dependents are notified.
+### ES2015 Modules
+ES2015 introduced built-in JavaScript modules. A module is a file containing JavaScript code, with some difference in behavior compared to a normal script.
 
-## Parts of pattern
-An observable object usually contains 3 important parts:
-+ **observers:**: an array of observers that will get notified whenever a specific event occurs
-+ **subscribe():** a method in order to add observers to the observers list
-+ **unsubscribe():** a method in order to remove observers from the observers list
-+ **notify():** a method to notify all observers whenever a specific event occurs
+A great benefit of having modules, is that we only have access to the values that we explicitly exported using the export keyword. Values that we didn't explicitly export using the export keyword, are only available within that module.
+
+### Dynamic import
+When importing all modules on the top of a le, all modules get loaded before the rest of the le. In some cases, we only need to import a module based on a certain condition. With a dynamic import, we can import modules on demand.
+
+By dynamically importing modules, we can reduce the page load time. We only have to load, parse, and compile the code that the user really needs, when the user needs it.
